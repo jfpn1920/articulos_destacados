@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>articulos destacados</title>
+    <link rel="stylesheet" href="articulos_destacados.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="articulos_destacados.js" defer></script>
+</head>
+<body>
+    <!----------------------------------------->
+    <!--|estructuracion_articulos_destacados|-->
+    <!----------------------------------------->
+    <main class="contenedor">
+        <section class="introduccion">
+            <div class="icono_introduccion">
+                <i class="fa-solid fa-crown"></i>
+            </div>
+            <div>
+                <h2>Productos destacados</h2>
+                <p>Explora los artículos disponibles en nuestra vitrina.</p>
+            </div>
+        </section>
+        <!----------------------------->
+        <!--|contenedor_de_productos|-->
+        <!----------------------------->
+        <section class="productos">
+            <article class="articulo" data-id="1">
+                <div class="imagen_contenedor">
+                    <img class="imagen_producto" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Zapatillas deportivas">
+                </div>
+                <div class="contenido">
+                    <span class="numero">01</span>
+                    <label>Imagen</label>
+                    <input class="campo_imagen" type="text" value="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80">
+                    <label>Nombre del artículo</label>
+                    <input class="campo_nombre" type="text" value="Zapatillas deportivas"><label>Precio</label>
+                    <div class="campo_precio">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <input class="campo_valor" type="number" value="180000">
+                    </div>
+                    <div class="acciones">
+                        <button class="boton guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje"></p>
+                </div>
+            </article>
+            <article class="articulo" data-id="2">
+                <div class="imagen_contenedor">
+                    <img class="imagen_producto" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Reloj de pulsera">
+                </div>
+                <div class="contenido">
+                    <span class="numero">02</span>
+                    <label>Imagen</label>
+                    <input class="campo_imagen" type="text" value="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80">
+                    <label>Nombre del artículo</label>
+                    <input class="campo_nombre" type="text" value="Reloj de pulsera">
+                    <label>Precio</label>
+                    <div class="campo_precio">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <input class="campo_valor" type="number" value="250000">
+                    </div>
+                    <div class="acciones">
+                        <button class="boton guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje"></p>
+                </div>
+            </article>
+            <article class="articulo" data-id="3">
+                <div class="imagen_contenedor">
+                    <img class="imagen_producto" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" alt="Audífonos">
+                </div>
+                <div class="contenido">
+                    <span class="numero">03</span>
+                    <label>Imagen</label>
+                    <input class="campo_imagen" type="text" value="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80">
+                    <label>Nombre del artículo</label>
+                    <input class="campo_nombre" type="text" value="Audífonos inalámbricos">
+                    <label>Precio</label>
+                    <div class="campo_precio">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <input class="campo_valor" type="number" value="320000">
+                    </div>
+                    <div class="acciones">
+                        <button class="boton guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje"></p>
+                </div>
+            </article>
+        </section>
+        <!--------------------->
+        <!--|control_general|-->
+        <!--------------------->
+        <section class="control_general">
+            <button id="restablecerTodo" class="boton boton_reset"> <i class="fa-solid fa-trash"></i>Restablecer todos</button>
+            <p id="mensajeGeneral"></p>
+        </section>
+    </main>
+</body>
+</html>
